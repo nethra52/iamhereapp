@@ -14,11 +14,11 @@ export class SignupPage implements OnInit {
   signupForm:  FormGroup;
   stopsArr = [];
   arrRoutes = [
-    {nRoute:  'Route: 1', area:  'Boduppal'},
-    {nRoute:  'Route: 2', area:  'ECIL'},
-    {nRoute:  'Route: 3', area:  'Dilsukh Nagar'},
-    {nRoute:  'Route: 4', area:  'Uppal'},
-    {nRoute:  'Route: 5', area:  'Ramanthapur'},
+    {nRoute:  'Route:1', area:  'Boduppal'},
+    {nRoute:  'Route:2', area:  'ECIL'},
+    {nRoute:  'Route:3', area:  'Dilsukh Nagar'},
+    {nRoute:  'Route:4', area:  'Uppal'},
+    {nRoute:  'Route:5', area:  'Ramanthapur'},
   ];
   arrStops = [];
 

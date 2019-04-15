@@ -15,11 +15,11 @@ export class StopeditPage implements OnInit {
   routeEditForm: FormGroup;
 
   arrRoutes = [
-    {nRoute:  'Route: 1', area:  'Boduppal'},
-    {nRoute:  'Route: 2', area:  'ECIL'},
-    {nRoute:  'Route: 3', area:  'Dilsukh Nagar'},
-    {nRoute:  'Route: 4', area:  'Uppal'},
-    {nRoute:  'Route: 5', area:  'Ramanthapur'},
+    {nRoute:  'Route:1', area:  'Boduppal'},
+    {nRoute:  'Route:2', area:  'ECIL'},
+    {nRoute:  'Route:3', area:  'Dilsukh Nagar'},
+    {nRoute:  'Route:4', area:  'Uppal'},
+    {nRoute:  'Route:5', area:  'Ramanthapur'},
   ];
   arrStops = [];
   stopsArr = [];
