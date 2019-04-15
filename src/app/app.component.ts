@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Storage } from '@ionic/storage';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,21 +13,23 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Home',
-      url: '/home',
-      icon: 'home'
+      title: 'Map View',
+      url: '/map',
+      icon: 'map'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Edit Stop',
+      url: '/stopedit',
+      icon: 'create'
     }
   ];
 
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private _storage: Storage,
+    private _router: Router
   ) {
     this.initializeApp();
   }
@@ -36,4 +40,15 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
+  logOut() {
+    this._storage.remove('iamhereLog').then(() => {
+      this._router.navigate(['home']);
+    });
+  }
+
+  // routeRedirect(url) {
+  //   console.log(url);
+  //   this._router.navigate[url];
+  // }
 }

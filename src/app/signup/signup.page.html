@@ -1,0 +1,85 @@
+<ion-content padding>
+  <div class="d-form">
+    <form [formGroup]="signupForm" (ngSubmit)="signMe()" #f>
+      <ion-item lines="none">
+        <!-- <p class="help-bar" ion-text *ngIf="signupForm.invalid">Please Enter Credentials</p> -->
+      </ion-item>
+      <div class="inputs">
+        <!-- Full name -->
+        <ion-item lines="none">
+          <ion-label class="ip-label" color="primary" position="stacked">Full Name</ion-label>
+          <ion-input placeholder="Ex:Navadeep Raja" name="fullname" formControlName="fullname"></ion-input>
+        </ion-item>
+        <ion-item lines="none" *ngIf="signupForm.get('fullname').invalid && signupForm.get('fullname').touched">
+          <p ion-text color="danger">Please enter your Name</p>
+        </ion-item>
+        <!-- User name -->
+        <ion-item lines="none">
+          <ion-label class="ip-label" color="primary" position="stacked">Username</ion-label>
+          <ion-input placeholder="Ex:14PQ1A0546" name="username" formControlName="username"></ion-input>
+        </ion-item>
+        <ion-item lines="none" *ngIf="signupForm.get('username').invalid && signupForm.get('username').touched">
+          <p ion-text color="danger">Please Enter Username</p>
+        </ion-item>
+        <!-- Password  -->
+        <ion-item lines="none">
+          <ion-label class="ip-label" color="primary" position="stacked">Password</ion-label>
+          <ion-input type="password" placeholder="Enter Password" name="password" formControlName="password">
+          </ion-input>
+        </ion-item>
+        <ion-item lines="none" *ngIf="signupForm.get('password').invalid && signupForm.get('password').touched">
+          <p ion-text color="danger">Please Enter Password</p>
+        </ion-item>
+        <!-- Phine  -->
+        <ion-item lines="none">
+          <ion-label class="ip-label" color="primary" position="stacked">Mobile Number</ion-label>
+          <ion-input type="number" placeholder="Enter Mobile Number" name="phnNumber" formControlName="phnNumber">
+          </ion-input>
+        </ion-item>
+        <ion-item lines="none" *ngIf="signupForm.get('phnNumber').valid && signupForm.get('phnNumber').touched">
+          <p ion-text color="danger">Please Enter Mobile Number</p>
+        </ion-item>
+        <!-- Reenter Password  -->
+        <!-- <ion-item lines="none">
+                        <ion-label class="ip-label" color="primary" position="stacked">Re-Enter Password</ion-label>
+                        <ion-input type="password"  placeholder="Re-Enter Password" name="rpassword" formControlName="rpassword"></ion-input>
+                      </ion-item>
+                      <ion-item lines="none" *ngIf="!signupForm.controls.rpassword.valid && signupForm.controls.rpassword.touched">
+                          <p ion-text color="danger">Please Enter Password</p>
+                      </ion-item> -->
+
+        <!-- Route  -->
+        <ion-item lines="none">
+          <ion-label class="ip-label" color="primary" position="stacked">Bus Route</ion-label>
+          <ion-select placeholder="Ex:Route 1" name="broute" formControlName="broute" (ionChange)="getStops()">
+            <ion-select-option *ngFor="let item of arrRoutes">{{item.nRoute}}-{{item.area}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item lines="none" *ngIf="signupForm.get('broute').invalid && signupForm.get('broute').touched">
+          <p ion-text color="danger">Please Choose Bus Route</p>
+        </ion-item>
+        <!-- Stop  -->
+        <ion-item lines="none">
+          <ion-label class="ip-label" color="primary" position="stacked">Bus Stop</ion-label>
+          <ion-select type="text" placeholder="Select Bus Stop" name="busstop" formControlName="busstop">
+            <ion-select-option *ngFor="let item of arrStops">{{item.locName}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item lines="none" *ngIf="signupForm.get('busstop').valid && signupForm.get('busstop').touched">
+          <p ion-text color="danger">Please Select Bus Stop</p>
+        </ion-item>
+      </div>
+      <ion-button color="primary" expand="block" (click)="signMe()" >SIGNUP</ion-button>
+
+    </form>
+
+  
+      <ion-button color="primary" expand="block" fill="outline" (click)="logIn()">LOGIN
+    </ion-button>
+ 
+
+
+  </div>
+
+
+</ion-content>

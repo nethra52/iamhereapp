@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>map</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="map" id="map" #map></div>
+</ion-content>
+<ion-footer>
+    <div class="time">
+        <ion-grid>
+          <ion-row *ngIf="actor['type']!=='bus'">
+            <ion-col>
+              <p class="edt" ion-text>Est. Time</p>
+              <p class="edt" ion-text><b>{{eTime==' '?'0 Mins':eTime}}</b></p>
+            </ion-col>
+            <ion-col>
+              <p class="edt" ion-text>Est. Distance</p>
+              <p class="edt" ion-text><b>{{eDist==' '?'0 Mts':eDist}}</b></p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+                <ion-button *ngIf="actor['type']=='bus'" color="primary" expand="block" (click)="sendMessage()">Start Ride</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+</ion-footer>

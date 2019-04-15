@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Edit Stop Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <form [formGroup]="routeEditForm" >
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="ip__div">
+            <ion-label class="ip-label" color="primary" position="stacked">Bus Route</ion-label>
+          <ion-select placeholder="Ex:Route 1" name="broute" formControlName="broute" (ionChange)="getStops()">
+            <ion-select-option *ngFor="let item of arrRoutes">{{item.nRoute}}-{{item.area}}</ion-select-option>
+          </ion-select>
+          </div>
+        </ion-col>
+      </ion-row>
+        <ion-row>
+        <ion-col>
+          <div class="ip__div">
+            <ion-label class="ip-label" color="primary" position="stacked">Bus Stop</ion-label>
+          <ion-select type="text" placeholder="Select Bus Stop" name="busstop" formControlName="busstop">
+            <ion-select-option *ngFor="let item of arrStops">{{item.locName}}</ion-select-option>
+          </ion-select>
+          </div>
+        </ion-col>
+      </ion-row>
+        <ion-row>
+        <ion-col>
+          <div class="ip__div">
+            <ion-button color="primary" expand="block" (click)="editRoute()" >CHANGE ROUTE</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

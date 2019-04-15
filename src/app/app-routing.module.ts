@@ -12,9 +12,16 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule'
   },
   {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+    path: 'home/:actor',
+    loadChildren: './home/home.module#HomePageModule'
+  },
+  { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
+  { path: 'map', loadChildren: './map/map.module#MapPageModule' },
+  { path: 'stopedit', loadChildren: './stopedit/stopedit.module#StopeditPageModule' },
+  // {
+  //   path: 'list',
+  //   loadChildren: './list/list.module#ListPageModule'
+  // }
 ];
 
 @NgModule({

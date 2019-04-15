@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "64052745111",
+    "firebase_url": "https://tracker-228317.firebaseio.com",
+    "project_id": "tracker-228317",
+    "storage_bucket": "tracker-228317.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64052745111:android:65bbf4c3b40cbdc7",
+        "android_client_info": {
+          "package_name": "com.anurag.iamhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64052745111-8n6m1jmqsvjhh9etnlum3lim7f2v6qai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCopjCqixSN_O_4ktggdujY5WAnrtp6vUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64052745111:android:72cf3fa4051ba80a",
+        "android_client_info": {
+          "package_name": "nav.pack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64052745111-8n6m1jmqsvjhh9etnlum3lim7f2v6qai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCopjCqixSN_O_4ktggdujY5WAnrtp6vUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

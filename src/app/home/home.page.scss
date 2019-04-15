@@ -1,4 +1,76 @@
-.welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
-}
+
+
+  p{
+    margin: 2% 0;
+  }
+  ion-content {
+    align-items: center !important;
+  }
+
+  ion-input {
+    border: 1px solid #c5c5c5;
+    padding: .4rem;
+  }
+
+  ion-label {
+    margin: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .d-form {
+
+    position: absolute;
+    top: 20% !important;
+    left: 16px !important;
+    right: 16px !important;
+  }
+
+  .inputs {
+    margin-bottom: 3rem;
+  }
+
+  .ip-label {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .st-actor {
+    border: #488aff 2px solid;
+    border-radius: 10px;
+  }
+
+  .actor {
+    text-align: center;
+    color: #488aff;
+    padding: 1rem;
+  }
+
+  .active {
+    background-color: #488aff;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+
+  ion-col h6 {
+    margin: 0px;
+  }
+
+  .help-bar {
+    color: #a01414;
+    background: rgba(255, 75, 75, .5);
+    border: 1px solid #da3b3b;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .shw {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+
+  .pswd {
+    position: relative;
+  }
+
+

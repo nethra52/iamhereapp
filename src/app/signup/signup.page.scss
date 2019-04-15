@@ -1,0 +1,37 @@
+
+    ion-content{
+        align-items: center !important;
+    }
+   
+    ion-input{
+        border:1px solid #c5c5c5;
+        padding: .4rem;
+    }
+    ion-label{
+        margin:0 !important;
+        margin-right: 0 !important;
+    }
+ 
+     .d-form{
+       position: absolute;
+       left:16px !important;
+       right: 16px !important;
+    }
+    .inputs{
+        margin-bottom: 2rem;
+    }
+    .ip-label{
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .help-bar{
+        color: #a01414;
+        background:rgba(255, 75, 75, .5);
+        border: 1px solid #da3b3b;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+
+

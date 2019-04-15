@@ -1,5 +1,7 @@
 {
   "name": "anurag",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
